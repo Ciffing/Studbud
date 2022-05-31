@@ -1,0 +1,127 @@
+*{
+    font-family:comic sans MS;
+    text-align:center;
+  }
+
+  h2{
+    background:transparent;
+    border-radius:25px;
+  }
+  
+  h2:hover{
+    color:rgb(0, 0, 0);
+    border-color:rgb(209, 208, 208);
+    background:rgb(240, 210, 166);
+    transition:0.5s;
+  }
+  #task-grid{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:"askform" "asklist";
+  }
+  
+  input,select{
+    width:40%;
+    color:black;
+    padding:0px;
+    height: 20px;
+    margin: 2px;
+    border-color:rgb(170, 1, 20);
+    font-size: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 3px rgba(170, 1, 20, 0.7);
+  }
+  
+  label{
+    font-size:12px;
+    margin-right:5px;
+    color:white;
+  }
+  
+  button {
+      margin-bottom: 5px;
+      background: transparent;
+      border-radius:20px;
+      right:15%;
+      justify-content:center;
+      position:relative;
+      margin:15px 15px;
+      font-weight:bold;
+      border:2px solid white;
+      color:white;
+      cursor: pointer;
+      overflow:hidden;
+  }
+  
+  button:hover{
+    color:rgb(170, 1, 20);
+    border-color:rgb(214, 181, 181);
+    background:transparent;
+    transition:0.5s;
+  }
+  
+  button1 {
+      margin-bottom: 5px;
+      background: transparent;
+      border-radius:20px;
+      left:30%;
+      justify-content:center;
+      position:relative;
+      margin:15px 15px;
+      font-size:10px;
+      font-weight:bold;
+      border:2px solid white;
+      color:white;
+      cursor: pointer;
+      overflow:hidden;
+  }
+  
+  button1:hover{
+    color:rgb(170, 1, 20);
+    border-color:rgb(226, 184, 184);
+    background:transparent;
+    transition:0.5s;
+  }
+  
+  #taskform{
+    grid-area:askform;
+    width:relative;
+    margin:5px;
+    padding:0 5px 0 0;
+    font-family:comic sans MS;
+    font-weight:400;
+    line-height:1.75;
+    color:black;
+    background: linear-gradient(to bottom left,rgb(255, 102, 75),rgb(185, 67, 80));
+    text-align:right;
+    justify-content:center;
+    align-items:center;
+    border-radius:25px;
+    box-shadow: 0 0 20px 15px rgba(170, 1, 20, 0.7);
+  }
+  
+  #tasklist{
+    grid-area:asklist;
+    margin:5px;
+  }
+  
+  li {
+  position: relative;
+  text-align:center;
+  list-style: none;
+  height: 50px;
+  margin: 5px;
+  background: rgb(185, 67, 80);
+  color:white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px rgba(170, 1, 20, 0.7);
+  }
+  
+  p{
+    color:rgb(185, 67, 80);
+    background: white;
+    border-radius:25px;
+    text-align:center;
+    margin:20px;
+  }

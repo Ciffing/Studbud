@@ -1,0 +1,79 @@
+*{
+    font-family:comic sans MS;
+  }
+  
+  h4{
+    text-align:center;
+    color:black;
+    border-bottom:1px ridge grey;
+    font-size:10px;
+  }
+  
+  button {
+      margin-bottom: 5px;
+      background: rgb(135, 224, 107);
+      border-radius:20px;
+      left:30%;
+      justify-content:center;
+      position:relative;
+      margin:15px 15px;
+      font-weight:bold;
+      border:5px solid rgb(135, 224, 107);
+      color:white;
+      cursor: pointer;
+      overflow:hidden;
+  }
+  
+  button:hover{
+    color:rgb(135, 224, 107);
+    border-color:rgb(135, 224, 107);
+    background:transparent;
+    transition:0.5s;
+  }
+  
+  #addTaskSect input {
+    width:100%;
+    padding: 15px 30px;
+    border-radius:50px;
+    border:none;
+    color:white;
+    background-color: rgb(135, 224, 107);
+    box-shadow: 0 0 10px 10px rgba(135, 224, 107, 0.5);
+  }
+  
+  .board{
+    max-height:300px;
+    background-color:white;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding:5px;
+  }
+  
+  
+  #overview {
+    padding-top:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(135, 224, 107, 0.5);
+    box-shadow: 0 0 15px 15px rgba(135, 224, 107, 0.5);
+  }
+  
+  .number {
+    margin-left:10px;
+    color: rgb(135, 224, 107);
+  }
+  
+  #drag {
+    cursor:grabbing;
+  }
+  
+  .item {
+    background-color:rgb(135, 224, 107);
+    cursor:grab;
+    border-radius:5px;
+    margin:5px;
+    font-size:10px;
+  }

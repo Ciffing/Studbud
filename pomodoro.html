@@ -1,0 +1,32 @@
+<link href="pomodoro.css" rel="stylesheet" type="text/css" />
+<script src="pomodoro.js" defer></script>
+
+<div class="pomodoroframe">
+  <div id="pomodoro">  
+    <div class="pomodorocover"></div>
+    <div id="state"></div>
+    <div class="pmdtime">25:00</div>
+    <button id="start-btn" class="btn">START</button>
+  </div>
+  <div class="edittime">
+    <div id="focus">
+      <p>Focus Time</p>
+      <button class="btn-edittime" id="focus-add">+</button>
+      <div><span id="focus-min">25</span> mins</div>
+      <button class="btn-edittime" id="focus-sub">-</button>
+    </div>
+    <div id="break">
+      <p>Short Break</p>
+      <button class="btn-edittime" id="break-add">+</button>
+      <div><span id="break-min">5</span> mins</div>
+      <button class="btn-edittime" id="break-sub">-</button>
+    </div>
+    <div id="lbk">
+      <p>Long Break</p>
+      <button class="btn-edittime" id="lbk-add">+</button>
+      <div><span id="lbk-min">30</span> mins</div>
+      <button class="btn-edittime" id="lbk-sub">-</button>
+    </div>
+  </div>
+  </div>
+  <button id="reset" class="btn">Reset</button>

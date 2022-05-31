@@ -1,0 +1,32 @@
+<link href="taskmanager.css" rel="stylesheet" type="text/css" />
+<script src="taskmanager.js" defer></script>
+<body>
+    
+<h2>Task Manager</h2>
+<div id="task-grid">
+      <form id="taskform">
+      <label for="task">Task</label>
+      <input type="text" name="task" id="taskInput"><br>
+      <label for="dueDate">Due Date</label>
+      <input type="date" name="dueDate" id="dueDateInput"><br>
+      <label for="completionTime">Completion Time</label>
+      <input type="time" name="completionTime" id="completionTimeInput"><br>
+      <label for="estimatedTime">Estimated Time</label>
+      <input type="number" name="estimatedTime" id="estimatedTimeInput"><br>
+      <label for="priority">Task Priority</label>
+      <select name="priority" id="priorityInput">
+        <option value="">Select one</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="tasklist">
+      <p id="emptyList">You have not added any tasks yet.</p>
+      <ul id="todoList"></ul>
+    </div>
+  </div>
+</body>

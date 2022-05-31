@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="iframe.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="/images/favicon.jpg"/>
     <title>Study with me</title>
@@ -17,14 +18,129 @@
                 <span class="close-btn">&times;</span>
                 <header>My App</header>
                 <ul>
-                    <p><a href="#"><i class="ri-task-line"></i>Task</a></p>
-                    <p><a href="#"><i class="ri-timer-line"></i>Stopwatch</a></p>
-                    <p><a href="#"><i class="ri-disc-line"></i>Music</a></p>
-                    <p><a href="#"><i class="ri-stack-line"></i>Overview</a></p>
-                    <p><a href="#"><i class="ri-plant-line"></i>Pomodoro</a></p>
-                    <p><a href="#"><i class="ri-book-mark-line"></i>Dictionary</a></p>
+                   <p onclick="clickTask()"><a href="#taskbox"><i class="ri-task-line"></i>Task</a></p>
+                    <p onclick="clickStopwatch()"><a href="#stopwatchbox"><i class="ri-timer-line"></i>Stopwatch</a></p>
+                    <p onclick="clickMusic()"><a href="#musicbox"><i class="ri-disc-line"></i>Music</a></p>
+                    <p onclick="clickOverview()"><a href="#overviewbox"><i class="ri-stack-line"></i>Overview</a></p>
+                    <p onclick="clickPomodor()"><a href="#pomodorobox"><i class="ri-plant-line"></i>Pomodoro</a></p>
+                    <p onclick="clickDictionary()"><a href="#dictionarybox"><i class="ri-book-mark-line"></i>Dictionary</a></p>
                 </ul>
             </div>
+                <section id="taskbox">
+                    <div class="taskbox drag-box">
+                        
+                            <div class="drag-bar">
+                                <!-- icon -->
+                                <div class="a-out"></div>
+                                <div class="w-narrow"></div>
+                                <div class="w-ext"></div>
+                            </div>
+                            <div class="content">
+                                <iframe src="taskmanager.html"></iframe>
+                            </div>
+                            <!-- The four corners of the box can be dragged -->
+                            <div class="corner corner-lt"></div>
+                            <div class="corner corner-lb"></div>
+                            <div class="corner corner-rt"></div>
+                            <div class="corner corner-rb"></div>
+                        </div>
+                </section>
+                <section id="stopwatchbox">
+                    <div class="stopwatchbox drag-box">
+                        
+                            <div class="drag-bar">
+                                <!-- icon -->
+                                <div class="b-out"></div>
+                                <div class="w-narrow"></div>
+                                <div class="w-ext"></div>
+                            </div>
+                            <div class="content">
+                                <iframe src="stopwatch.html"></iframe>
+                            </div>
+                            <!-- The four corners of the box can be dragged -->
+                            <div class="corner corner-lt"></div>
+                            <div class="corner corner-lb"></div>
+                            <div class="corner corner-rt"></div>
+                            <div class="corner corner-rb"></div>
+                        </div>
+                </section>
+                <section id="musicbox">
+                    <div class="musicbox">
+                        
+                            <div class="drag-bar">
+                                <!-- icon -->
+                                <div class="c-out"></div>
+                                <div class="w-narrow"></div>
+                                <div class="w-ext"></div>
+                            </div>
+                            <div class="content">
+                                <iframe src="music.html"></iframe>
+                            </div>
+                            <!-- The four corners of the box can be dragged -->
+                            <div class="corner corner-lt"></div>
+                            <div class="corner corner-lb"></div>
+                            <div class="corner corner-rt"></div>
+                            <div class="corner corner-rb"></div>
+                        </div>
+                </section>
+                <section id="overviewbox">
+                    <div class="overviewbox">
+                        
+                            <div class="drag-bar">
+                                <!-- icon -->
+                                <div class="d-out"></div>
+                                <div class="w-narrow"></div>
+                                <div class="w-ext"></div>
+                            </div>
+                            <div class="content">
+                                <iframe src="overview.html"></iframe>
+                            </div>
+                            <!-- The four corners of the box can be dragged -->
+                            <div class="corner corner-lt"></div>
+                            <div class="corner corner-lb"></div>
+                            <div class="corner corner-rt"></div>
+                            <div class="corner corner-rb"></div>
+                        </div>
+                </section>
+                <section id="pomodorobox">
+                    <div class="pomodorobox">
+                        
+                            <div class="drag-bar">
+                                <!-- icon -->
+                                <div class="e-out"></div>
+                                <div class="w-narrow"></div>
+                                <div class="w-ext"></div>
+                            </div>
+                            <div class="content">
+                                <iframe src="pomodoro.html"></iframe>
+                            </div>
+                            <!-- The four corners of the box can be dragged -->
+                            <div class="corner corner-lt"></div>
+                            <div class="corner corner-lb"></div>
+                            <div class="corner corner-rt"></div>
+                            <div class="corner corner-rb"></div>
+                        </div>
+                </section>
+                <section id="dictionarybox">
+                    <div class="dictionarybox">
+                        
+                            <div class="drag-bar">
+                                <!-- icon -->
+                                <div class="f-out"></div>
+                                <div class="w-narrow"></div>
+                                <div class="w-ext"></div>
+                            </div>
+                            <div class="content">
+                                <iframe src="dictionary.html"></iframe>
+                            </div>
+                            <!-- The four corners of the box can be dragged -->
+                            <div class="corner corner-lt"></div>
+                            <div class="corner corner-lb"></div>
+                            <div class="corner corner-rt"></div>
+                            <div class="corner corner-rb"></div>
+                        </div>
+                </section>
+
             <script>
                 document.querySelector('.open-btn').onclick = () =>{
                     document.querySelector('.sidebar').classList.add('active')
@@ -33,5 +149,51 @@
                     document.querySelector('.sidebar').classList.remove('active')
                 }
             </script>
+            <script>
+                function clickTask() {
+                    document.querySelector(".taskbox").style.display = 'block'
+                }
+                document.querySelector(".a-out").onclick = function clickClose() {
+                    document.querySelector(".taskbox").style.display = 'none'
+                }
+
+                function clickStopwatch() {
+                    document.querySelector(".stopwatchbox").style.display = 'block'
+                }
+                document.querySelector(".b-out").onclick = function clickClose() {
+                    document.querySelector(".stopwatchbox").style.display = 'none'
+                }
+
+                function clickMusic() {
+                    document.querySelector(".musicbox").style.display = 'block'
+                }
+                document.querySelector(".c-out").onclick = function clickClose() {
+                    document.querySelector(".musicbox").style.display = 'none'
+                }
+
+                function clickOverview() {
+                    document.querySelector(".overviewbox").style.display = 'block'
+                }
+                document.querySelector(".d-out").onclick = function clickClose() {
+                    document.querySelector(".overviewbox").style.display = 'none'
+                }
+
+                function clickPomodor() {
+                    document.querySelector(".pomodorobox").style.display = 'block'
+                }
+                document.querySelector(".e-out").onclick = function clickClose() {
+                    document.querySelector(".pomodorobox").style.display = 'none'
+                }
+
+                function clickDictionary() {
+                    document.querySelector(".dictionarybox").style.display = 'block'
+                }
+                document.querySelector(".f-out").onclick = function clickClose() {
+                    document.querySelector(".dictionarybox").style.display = 'none'
+                }
+
+            </script>
+            
+            <script src="./taskmanagerbox.js"></script>
         </body>
     </head>

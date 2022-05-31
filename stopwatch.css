@@ -1,0 +1,121 @@
+*{
+    font-family:comic sans MS;
+  }
+  
+  *,
+  *:before,
+  *:after{
+      padding: 0;
+      margin: 0;
+  }
+  
+  .timescreen{
+      position: center;
+      width: relative;
+      background: linear-gradient(to bottom left,pink,rgb(201, 113, 212));
+      padding: 100px 10px;
+      margin:10px;
+      color: white;
+      font-size: 20px;
+      font-family: comic sans MS;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 50px;
+      box-shadow: 0 0 20px 15px rgba(175, 95, 185, 0.5);
+  }
+  
+  .timepro{
+      width: 100%;
+      margin: 20px auto 0 auto;
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .timepro button{
+  
+      background-color:rgb(221, 174, 228);
+      color: white;
+      border: none;
+      font-size: 15px;
+      font-family: comic sans MS;
+      margin: 20px auto 0 auto;
+      height: 75px;
+      width: 75px;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 0 20px 5px rgba(175, 95, 185, 1);
+  }
+  
+  .timepro button:hover{
+    color:rgb(175, 95, 185);
+    border-color:white;
+    background:transparent;
+    transition:0.5s;
+  }
+  
+  .stoptitle {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+    font-family:comic sans MS;
+    color: grey;
+  }
+  
+  .timecircle{
+    text-align:center;
+  }
+  
+  .circle {
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 25px;
+    margin: 40px auto 0 auto;
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .circle:nth-of-type(1) {
+    background-color: #EF476F;
+    animation-delay: 0ms;
+  }
+  
+  .circle:nth-of-type(2) {
+    background-color: #FFD166;
+    animation-delay: 150ms;
+  }
+  
+  .circle:nth-of-type(3) {
+    background-color: #06D6A0;
+    animation-delay: 300ms;
+  }
+  
+  .circle:nth-of-type(4) {
+    background-color: #118AB2;
+    animation-delay: 450ms;
+  }
+  
+  .circle:nth-of-type(5) {
+    background-color: #073B4C;
+    animation-delay: 600ms;
+  }
+  
+  @keyframes bounce {
+    0%{
+      transform:translateY(0px);
+    }
+    50%{
+  
+      transform:translateY(20px);
+    }
+    100%{
+      tranform: translateY(0px);
+    }
+  }

@@ -1,0 +1,35 @@
+<link href="dictionary.css" rel="stylesheet" type="text/css" />
+<script src="dictionary.js" defer></script>
+
+<div class="searchbar">
+  <div class="searchbox">
+    <input type="text" placeholder="Search here" id="wordInput"/>
+    <button id=wordButton>Search</button>
+  </div>
+  <div> 
+    <form class="tickbox">
+      <div>
+        <input type="checkbox" id="definition">
+        <label for="definition">Definition</label>
+      </div> 
+      <div>
+        <input type="checkbox" id="synonym">
+        <label for="synonym">Synonym</label>
+      </div> 
+    </form>
+  </div>
+</div>
+<div class="result">
+  <div class="defres">
+    <div> 
+      <h3>Definition</h3>
+      <div id="defDef"></div>
+    </div>
+  </div>
+  <div class="synres">
+    <div>
+      <h3>Synonym</h3>
+      <ul id="synDef"></ul>
+    </div>
+  </div>
+</div>
